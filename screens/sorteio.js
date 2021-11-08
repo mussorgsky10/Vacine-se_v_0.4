@@ -21,6 +21,8 @@ export default function Sorteio({ route, navigation }) {
       setData(json);
     }
 
+  console.log(data);
+
   async function sendSorteado(numero_aleatorio) {
     await fetch(config.urlRoot + 'create-sorteado', {
       method: 'POST',
@@ -88,7 +90,7 @@ export default function Sorteio({ route, navigation }) {
           horizontal={true}
           keyExtractor={({ id }) => id}
           renderItem={({ item }) => (
-            <Text>{item.cracha_sorteado}, </Text>
+            <Text>{item.numero_sorteado}, </Text>
           )}
         />
         </View>
@@ -103,7 +105,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     justifyContent: "center",
-    backgroundColor: '#FFF07C',
+    //backgroundColor: '#FFF07C',
   },
   text: {
     margin: 10,

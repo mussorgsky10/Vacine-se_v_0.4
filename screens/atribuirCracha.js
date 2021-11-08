@@ -7,7 +7,6 @@ import config from '../config/config.json';
 export default function BarCodeReader({ route, navigation }) {
     const [hasPermission, setHasPermission] = useState(null);
     const [scanned, setScanned] = useState(false);
-    const [cracha, setCracha] = useState('');
 
     const { imagem } = route.params;
     const { nome } = route.params;
@@ -37,7 +36,6 @@ export default function BarCodeReader({ route, navigation }) {
 
     const handleBarCodeScanned = ({ type, data }) => {
         setScanned(true);
-        //alert(`O código do tipo ${type} com os seguintes dados: ${data} foi escaneado!`);
         sendForm({data});
         navigation.navigate('Perfil', { cracha: data, nome: nome, imagem: imagem, id: id })
     };
@@ -54,6 +52,7 @@ export default function BarCodeReader({ route, navigation }) {
             <BarCodeScanner
                 onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
                 style={StyleSheet.absoluteFillObject} />
+                {scanned && <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)} />}
             <Text style={styles.text}></Text>
         </View>
     );

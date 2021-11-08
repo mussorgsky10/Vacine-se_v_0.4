@@ -27,24 +27,14 @@ function Premios({ navigation }) {
   const [list, setList] = useState(null);
 
     useEffect(() => {
-      getRecompensasFromApiAsync;
+      sendForm()
   }, [searchText])
   ;
 
   //console.log(response)
   //console.log(data)
 
-  const getRecompensasFromApiAsync = async () => {
-    try {
-      const response = await fetch(config.urlRoot+'read-recompensas');
-      const json = await response.json();
-      {setData(json), setList(json)};
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  /*async function sendForm(){
+  async function sendForm(){
   try {
     { const response = await fetch(config.urlRoot+'read-recompensas');
       const json = await response.json();
@@ -52,7 +42,8 @@ function Premios({ navigation }) {
     }} catch (error) {
       console.error(error);
     }};
-    */
+
+
   function handleOrderClick() {
     let newList = [...data];
 
