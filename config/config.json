@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "database_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "b7da5de499136f",
+    "password": "2d4fcc3e",
+    "database": "heroku_2a2a5d3f7f61e48",
+    "host": "us-cdbr-east-04.cleardb.com",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "urlRoot": "https://vacine-se-v1.herokuapp.com/"
+}
