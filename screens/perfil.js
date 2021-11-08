@@ -44,7 +44,7 @@ export default function PerfilScreen({ route, navigation }) {
          <Text style={{paddingTop: 1, fontSize: 1, color: '#F9F9F9', paddingBottom: 1, alignSelf:'center' }}>Id: {id} </Text>
          <Text style={{paddingTop: 1, fontSize: 18, paddingBottom: 1, alignSelf:'center' }}>Crachá: {(cracha1 != null ? cracha1 : cracha)} </Text>
         <View style={{flexDirection: 'row', justifyContent: 'space-between', padding: 20 }}>
-          <Button title="Voltar" onPress={() => navigation.navigate('Cliente')} />
+          <Button title="Voltar" onPress={() => navigation.goBack()} />
           <Button title="Atribuir Crachá" onPress={() => navigation.navigate('QR Code', {
               imagem: imagem,
               nome: nome,

@@ -97,25 +97,19 @@ function ClientesScreen({ navigation }) {
           placeholder="Pesquise uma pessoa"
           placeholderTextColor="#888"
           value={searchText}
-          onChangeText={(t) => setSearchText(t)}
-        />
+          onChangeText={(t) => setSearchText(t)}/>
         <TouchableOpacity onPress={handleOrderClick} style={styles.orderButton}>
           <MaterialCommunityIcons
             name="order-alphabetical-ascending"
             size={32}
-            color="#888"
-          />
+            color="#888"/>
         </TouchableOpacity>
       </View>
-
-
       <FlatList
         data={list}
         style={styles.list}
         renderItem={({ item }) => <ListItem data={item} />}
-        keyExtractor={(item) => item.createdAt}
-      />
-
+        keyExtractor={(item) => item.createdAt}/>
       <StatusBar style="light" />
     </SafeAreaView>
   );

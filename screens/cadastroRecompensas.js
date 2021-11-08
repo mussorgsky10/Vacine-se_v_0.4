@@ -38,12 +38,14 @@ export default function CadastroRecompensas() {
           style={styles.input}
           placeholder='Nome do item'
           onChangeText={text => setItem(text)}
+          maxLength= {22}
           value={item}
         />
         <TextInput
           placeholder='Descrição'
           style={styles.input}
           onChangeText={text => setDescricao(text)}
+          maxLength= {22}
           value={descricao}
         />
       </View>

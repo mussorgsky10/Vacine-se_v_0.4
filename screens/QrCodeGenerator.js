@@ -50,7 +50,7 @@ export default function QrCodeGenerator() {
       <View style={styles.containerQr}>
         <QRCode
           value={qrValue ? qrValue : 'NA'}
-          size={130}
+          size={120}
           color="black"
           backgroundColor="white"
           logoSize={30}
@@ -61,7 +61,7 @@ export default function QrCodeGenerator() {
       </View>
       <View style={styles.container1}>
         <Text style={styles.text}>
-          Insira o numero da crachá que deseja gerar
+          Insira o numero do crachá que deseja gerar:
         </Text>
         <TextInput
           style={styles.textInput}
@@ -75,7 +75,7 @@ export default function QrCodeGenerator() {
       </View>
       <Button title="Imprimir" onPress={print} />
       <View style={styles.spacer} />
-      <Button title="Salvar como PDF" onPress={printToFile} />
+      <Button title="Compartilhar / Salvar PDF" onPress={printToFile} />
     </View>
   );
 }
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   text: {
-    fontSize: 18,
+    fontSize: 16,
     textAlign: 'center',
     margin: 5,
   },

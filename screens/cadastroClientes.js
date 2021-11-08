@@ -28,7 +28,7 @@ export default function CadastroClientes({navigation}) {
     sendForm();
     setNome("");
     setPhone("")
-    navigation.navigate('Vacine-se')
+    navigation.navigate('Vacine-se Home')
   }
 
   return (
@@ -39,6 +39,7 @@ export default function CadastroClientes({navigation}) {
           style={styles.input}
           placeholder='Nome do Cliente'
           onChangeText={text => setNome(text)}
+          maxLength= {22}
           value={nome}
         />
         <TextInput
@@ -46,6 +47,7 @@ export default function CadastroClientes({navigation}) {
           style={styles.input}
           keyboardType="numeric"
           onChangeText={number => setPhone(number)}
+          maxLength= {22}
           value={phone}
         />
       </View>
