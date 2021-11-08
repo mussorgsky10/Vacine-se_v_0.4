@@ -16,7 +16,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import PerfilScreen from './perfil'
-import BarCodeReader from './atribuirCracha';
+import LeitorDeQRCode from './atribuirCracha';
 import config from '../config/config.json';
 
 const { width } = Dimensions.get('window')
@@ -190,7 +190,7 @@ export default function Clientes() {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Cliente" component={ClientesScreen} />
         <Stack.Screen name="Perfil" component={PerfilScreen} />
-        <Stack.Screen name="QR Code" component={BarCodeReader} />
+        <Stack.Screen name="QR Code" component={LeitorDeQRCode} />
       </Stack.Navigator>
 
   );
