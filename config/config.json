@@ -7,9 +7,9 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": "b7da5de499136f",
-    "password": "2d4fcc3e",
-    "database": "heroku_2a2a5d3f7f61e48",
+    "username": "b7aba56013473b",
+    "password": "5e9c3adc",
+    "database": "heroku_19de47e4440b032",
     "host": "us-cdbr-east-04.cleardb.com",
     "dialect": "mysql"
   },
@@ -20,5 +20,5 @@
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-  "urlRoot": "http://192.168.0.17:3000/"
+  "urlRoot": "https://vacine-se-v1.herokuapp.com/"
 }
