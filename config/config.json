@@ -20,5 +20,5 @@
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-  "urlRoot": "http://192.168.0.17:3000/"
+  "urlRoot": "https://vacine-se-v-0-1.herokuapp.com/"
 }
