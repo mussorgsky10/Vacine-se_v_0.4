@@ -7,9 +7,9 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": "b7aba56013473b",
-    "password": "5e9c3adc",
-    "database": "heroku_19de47e4440b032",
+    "username": "b27ff9e2bddd2f",
+    "password": "a2019b9c",
+    "database": "heroku_3f5082d1c09b7dd",
     "host": "us-cdbr-east-04.cleardb.com",
     "dialect": "mysql"
   },
