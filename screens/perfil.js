@@ -46,7 +46,6 @@ export default function PerfilScreen({ route, navigation }) {
         <View style={{flexDirection: 'row', justifyContent: 'space-between', padding: 20 }}>
           <Button title="Voltar" onPress={() => navigation.goBack()} />
           <Button title="Atribuir Crachá" onPress={() => navigation.navigate('QR Code', {
-              imagem: imagem,
               nome: nome,
               id: id,
             } )} />

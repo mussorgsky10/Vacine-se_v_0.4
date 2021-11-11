@@ -8,7 +8,6 @@ export default function LeitorDeQRCode({ route, navigation }) {
     const [hasPermission, setHasPermission] = useState(null);
     const [scanned, setScanned] = useState(false);
 
-    const { imagem } = route.params;
     const { nome } = route.params;
     const { id } = route.params;
 
@@ -37,7 +36,7 @@ export default function LeitorDeQRCode({ route, navigation }) {
     const handleBarCodeScanned = ({ type, data }) => {
         setScanned(true);
         sendForm({ data });
-        navigation.goBack();
+        navigation.goBack({cracha: data});
     };
 
     if (hasPermission === null) {
@@ -52,6 +51,7 @@ export default function LeitorDeQRCode({ route, navigation }) {
             <BarCodeScanner
                 onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
                 style={StyleSheet.absoluteFillObject} />
+            <Text style={styles.text}>{nome}</Text>
         </View>
     );
 }

@@ -151,22 +151,6 @@ app.get('/read-recompensas', async (req, res) => {
     res.send(read);
 });
 
-app.get('/update', async (req,res, {Op})=> {
-    let update =await use.update(
-        {
-            cracha: 'null'
-        },
-        {
-            where: {
-                cracha: {
-                    [Op.in]: [001, 002, 003, 004, 005, 006, 007, ]  
-                }                           
-            }
-        }
-    )
-});
-
-
 app.get('/create-sorteado', async (req, res) => {
     let create = await sorteado.create({
         numero_sorteado: "25",
@@ -175,6 +159,10 @@ app.get('/create-sorteado', async (req, res) => {
     });
     res.send('Número armazenado com sucesso!');
 });
+
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
 
 let port = process.env.PORT || 3000;
 app.listen(port, (req, res) => {

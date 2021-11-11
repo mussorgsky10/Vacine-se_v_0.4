@@ -20,5 +20,5 @@
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-  "urlRoot": "http://us-cdbr-east-04.cleardb.com:3306/"
+  "urlRoot": "http://192.168.0.17:3000/"
 }
