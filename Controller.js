@@ -161,8 +161,11 @@ app.get('/create-sorteado', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.send('Hello World! V_1.2')
+    res.send('Hello World! V_1.3')
   })
 
 // set port, listen for requests
-app.listen(process.env.PORT || 3000);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
+});
