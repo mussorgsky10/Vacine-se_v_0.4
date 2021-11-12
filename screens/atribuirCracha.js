@@ -51,7 +51,7 @@ export default function LeitorDeQRCode({ route, navigation }) {
             <BarCodeScanner
                 onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
                 style={StyleSheet.absoluteFillObject} />
-            <Text style={styles.text}>{nome}</Text>
+            <Text style={styles.text}></Text>
         </View>
     );
 }

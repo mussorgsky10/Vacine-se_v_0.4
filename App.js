@@ -7,7 +7,7 @@ import Clientes from './screens/clientes'
 import CadastroClientes from './screens/cadastroClientes'
 import CadastroRecompensas from './screens/cadastroRecompensas'
 import RecompensaScreen from './screens/recompensas'
-import QrCodeGenerator from './screens/QrCodeGenerator'
+import QrCodeGenerator from './screens/qrCodeGenerator'
 import RelatorioCrachasEmUso from './screens/relatorioCrachasEmUso'
 import RelatorioDeVacinados from './screens/relatorioVacinados';
 

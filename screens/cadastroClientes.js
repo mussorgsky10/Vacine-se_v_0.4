@@ -28,7 +28,7 @@ export default function CadastroClientes({navigation}) {
     sendForm();
     setNome("");
     setPhone("")
-    navigation.navigate('Vacine-se Home')
+    //navigation.navigate('Vacine-se Home')
   }
 
   return (
