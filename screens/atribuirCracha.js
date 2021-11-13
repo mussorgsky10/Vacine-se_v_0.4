@@ -36,7 +36,7 @@ export default function LeitorDeQRCode({ route, navigation }) {
     const handleBarCodeScanned = ({ type, data }) => {
         setScanned(true);
         sendForm({ data });
-        navigation.navigate('Perfil',{cracha: data});
+        navigation.goBack();
     };
 
     if (hasPermission === null) {
